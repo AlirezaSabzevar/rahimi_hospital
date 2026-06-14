@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: 'BYekan';
+    src: url('../Fonts/BYekan.woff2') format('woff2'),
+         url('../Fonts/BLotus.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.nav-container-fluid{
+    background-color: rgb(221, 228, 245);
+    direction: rtl;
+    height: 60px;
+    position: relative;
+    font-family: 'BYekan';
+}
+.logo{
+    width: 70px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    padding: 2px;
+}
+.title-date{
+    color: #06298a;
+    direction: rtl;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(141, 143, 145);
+}

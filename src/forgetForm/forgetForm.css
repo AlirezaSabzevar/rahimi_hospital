@@ -1,0 +1,30 @@
+
+.forget-container{
+    background: url('../Images/1065712.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Card{
+    max-width: 400px;
+    direction: rtl;
+    /* margin: 150px auto; */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+.Form, .Button{
+    margin-top: 20px;
+}
+.Text{
+    display: block;
+    margin-top: 20px;
+}

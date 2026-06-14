@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'BYekan';
+    src: url('../Fonts/BYekan.woff2') format('woff2'),
+         url('../Fonts/BLotus.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
+
+
+.appointment-box {
+    background-color: var(--components-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    direction: rtl;
+    font-family: 'BYekan';
+}
+
+
+
+.dashboard-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.dashboard-item {
+    text-align: center;
+}
+.dashboard-item h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.dashboard-item p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+
+
+.row{
+    padding: 0 20px;
+}
+.form-label {
+    display: block;
+    font-weight: bold;
+}
+.custom-search-hospital input, .custom-search-department input {
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+}
+.form-select:focus, .form-control:focus, .custom-date-picker:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+#date, #hospital, #department {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 14px;
+
+}
+
+
+
+/* دکمه نمایش */
+.show-card-doctor {
+    background: #2a5298;
+    color: whitesmoke;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0 25px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.show-card-doctor:hover {
+    cursor: pointer;
+    background: #1e3c72;
+}
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    z-index: 1000;
+}
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+.overlay .overlay-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    position: relative;
+    transform: translateY(-30px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+.overlay.show .overlay-card {
+    transform: translateY(0);
+    opacity: 1;
+}
+.overlay .overlay-card h4{
+    color: #0554e5;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.overlay .overlay-card p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.overlay-card .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+.close-btn:hover {
+    background: #fd5757;
+    color: white;
+}
+
+
+
+.doctors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+.doctors-list h4{
+    color: firebrick;
+}
+.doctor-card {
+    background: #f3f3f3b2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.doctor-card:not(.overlay-card):hover {
+    transform: translateY(-5px);
+}
+.doctor-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.doctor-image:hover {
+    transform: scale(1.05);
+}
+.doctor-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.doctor-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+.call-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #2a5298;
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+.call-button:hover {
+    background: #1e3c72;
+}
+
+
+
+/* ✅ ریسپانسیو */
+@media (max-width: 500px) {
+    .overlay .overlay-card {
+        width: 90%;
+        padding: 20px;
+    }
+    .doctor-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

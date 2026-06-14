@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: 'BYekan';
+    src: url('../Fonts/BYekan.woff2') format('woff2'),
+         url('../Fonts/BLotus.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.on-call-container {
+    padding: 30px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--components-bg);
+    color: var(--text-color);
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'BYekan';
+    direction: rtl;
+}
+
+.on-call-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-group select{
+    width: 45%;
+    margin: 3px 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#date{
+    margin: 3px 5px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    
+}
+
+.date-picker-container {
+    position: relative;
+}
+
+.date-picker-container .clear-date-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    color: #888888;
+}
+.clear-date-btn:hover {
+    background-color: rgba(255, 0, 0, 0.915);
+    color: white;
+}
+
+.search-button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background: #1e3c72;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.search-button:hover {
+    background: #0056b3;
+}
+
+.oncall-doctor-list {
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.oncall-doctor-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 1px solid #dedede;
+    transition: background 0.2s ease-in-out;
+}
+
+.oncall-doctor-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.oncall-doctor-card  h4{
+    margin-bottom: 15px;
+}
+
+.no-results {
+    text-align: center;
+    color: gray;
+    margin-top: 10px;
+}
+
+.oncall-list-button {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    background: #1e3c72;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.oncall-list-button:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family: 'BYekan';
+    src: url('../Fonts/BYekan.woff2') format('woff2'),
+         url('../Fonts/BLotus.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.add-doctor-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--components-bg);
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'BYekan';
+    direction: rtl;
+}
+
+.add-doctor-container h3 {
+    margin-bottom: 35px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.add-doctor-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-doctor-container button {
+    width: 100%;
+    background: #1e3c72;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease-in-out;
+}
+.add-doctor-container button:hover {
+    background: #0056b3;
+}
+
+.add-doctor-container button svg {
+    margin-left: 5px;
+}

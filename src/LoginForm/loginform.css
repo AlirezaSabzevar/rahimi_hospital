@@ -1,0 +1,131 @@
+.all-content{
+    display: flex;
+}
+.login-description{
+    color: rgb(226, 226, 226);
+    position: absolute;
+    right: 2em;
+    top: 4em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.login-description .title-1{
+    margin-top: 22px;
+    font-size: larger;
+    text-shadow: 1px 1px 6px rgb(99, 99, 99);
+}
+.login-description .title-2{
+    margin-top: 45px;
+    font-size: 20px;
+    text-shadow: 1px 1px 6px rgb(99, 99, 99);
+
+}
+.login-description img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    outline: 10px double rgb(255, 255, 255);
+    background: #faf7f7;
+}
+
+
+.dark-theme {
+    background-color: #10132c;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0;
+}
+
+
+
+
+.frame-form{
+    background-color: rgb(247, 247, 233);
+    height: 70vh;
+    width: 550px;
+    /* border: 2px solid azure; */
+    outline: 3px solid rgb(254, 122, 99);
+    /* margin: 60px auto; */
+    margin: 100px 0 0 70px;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+}
+.login{
+    background-color: rgb(254, 122, 99);
+    color: snow;
+    padding: 12px;
+    height: 16%;
+    border-radius: 13px 13px 0 0;
+}
+/* .login-title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+} */
+.inputs{
+    /* display: grid; */
+    justify-content: center;
+    direction: rtl;
+    position: absolute;
+    bottom: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.user-item{
+    position: absolute;
+    top: 15%;
+    right: -25px;
+    color: gray;
+    opacity: 80%;
+}
+.lock-item{
+    position: absolute;
+    top: 65%;
+    right: -25px;
+    color: gray;
+    opacity: 80%;
+}
+.inputs input{
+    width: 400px;
+    padding: 5px;
+    margin: 15px;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px;
+    background-color: rgb(248, 248, 248);
+}
+.inputs input:focus{
+    background-color: rgb(239, 239, 239);
+    outline: 0;
+    border: 1px solid rgb(39, 87, 230);
+}
+.forget{
+    position: absolute;
+    right: 16%;
+    bottom: 25%;
+}
+.forget a{
+    text-decoration: none;
+
+}
+.frame-form button{
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    padding-bottom: 13px;
+}
+.frame-form .remember{
+    position: absolute;
+    bottom: 5.5em;
+    right: 6em;
+    font-size: 14px;
+}
