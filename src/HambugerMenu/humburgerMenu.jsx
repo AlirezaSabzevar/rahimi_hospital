@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuthStore } from '../store';
 import './humburgerMenu.css';
 import { IoArrowForward } from 'react-icons/io5';
-import { FaSearch, FaFilter, FaUserPlus, FaListAlt, FaUserEdit, FaCogs, FaSignOutAlt } from 'react-icons/fa';
+import { FaSearch, FaUserPlus, FaListAlt, FaUserEdit, FaCogs, FaSignOutAlt } from 'react-icons/fa';
 
 
 
